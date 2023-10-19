@@ -15,7 +15,7 @@ export default function Home() {
 
           <div className="col-12 col-lg-4 p-4">
             <div className="card p-4">
-              <h4 className="card-title">Energia Limpa 101</h4>
+              <h4 className="card-title">Energia Limpa</h4>
               <p className="text-secondary card-text" style={{ minWidth: '150px'}}>Economize energia, complete missões e desbloqueie conquistas enquanto aprende a usar energia limpa.</p>
               <a href="" className="btn btn-success">Iniciar desafio</a>
             </div>
