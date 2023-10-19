@@ -32,7 +32,7 @@ export default function App() {
 
       <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
 
-      <section id='pitch' className='container-fluid'>
+      <section id='about' className='container-fluid'>
         <div className='container'>
           <div className='row'>
 
@@ -65,7 +65,7 @@ export default function App() {
 
       <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
 
-      <section id='about' className='container-fluid'>
+      <section id='mission' className='container-fluid'>
         <div className='container'>
 
         </div>

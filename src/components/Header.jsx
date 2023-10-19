@@ -16,7 +16,6 @@ export default function Header() {
           <div className='col-12 d-flex align-items-center justify-content-center mt-2'>
             <nav className='nav justify-content-end'>
               <a className='nav-link link-success' href="/">Início</a>
-              <a className='nav-link link-success' href="#pitch">Vídeo pitch</a>
               <a className='nav-link link-success' href="#about">Sobre o projeto</a>
               <a className='nav-link link-success' href="/home">Entrar</a>
             </nav>
