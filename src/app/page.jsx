@@ -68,6 +68,36 @@ export default function App() {
       <section id='mission' className='container-fluid'>
         <div className='container'>
 
+          <div>
+            <h2 className='text-center'>Nossa missão</h2>
+            <hr className='mt-2 mb-2' style={{ opacity: '1%'}}/>
+            <p>
+              A On contrapõe a influência negativa das mídias, que incentiva ao consumismo, por conectar as pessoas e levá-las a um caminho de consumo consciente e responsabilidade socioambiental. Além disso, gera valor para a empresa, reforçando a sustentabilidade como base do seu modelo de negócios.
+            </p>
+          </div>
+
+          <hr className='mt-3 mb-3' style={{ opacity: '1%'}}/>
+
+          <div className='row'>
+            <div className="col-12 col-lg-3 card p-4">
+              <i className='text-secondary bi bi-tree container-fluid mb-2 fs-2'></i>
+              <h3 className='card-title'>Plante uma árvore</h3>
+              <p className='card-text text-secondary'>Projetos voltados ao remanejamento da flora.</p>
+            </div>
+            <div className="col-12 col-md-1"></div>
+            <div className="col-12 col-lg-3 card p-4">
+              <i className='text-secondary bi bi-book container-fluid mb-2 fs-2'></i>
+              <h3 className='card-title'>Leve educação para todos</h3>
+              <p className='card-text text-secondary'>Ajude institutos e fundações.</p>
+            </div>
+            <div className="col-12 col-md-1"></div>
+            <div className="col-12 col-lg-3 card p-4">
+              <i className='text-secondary bi bi-balloon-heart container-fluid mb-2 fs-2'></i>
+              <h3 className='card-title'>Ajude uma família</h3>
+              <p className='card-text text-secondary'>Participe de projetos de doação de alimentos.</p>
+            </div>
+          </div>
+
         </div>
       </section>
 
