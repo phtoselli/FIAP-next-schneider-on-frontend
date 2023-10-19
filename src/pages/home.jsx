@@ -17,8 +17,9 @@ export default function Home() {
       content: document.querySelector('#pubText').value
     }
 
-    const pubs = [...feed, fake]
+    const pubs = [...feed, fake];
     setFeed(pubs);
+    document.querySelector('#pubText').value = '';
   }
 
   const emptyFeed = (
@@ -102,7 +103,7 @@ export default function Home() {
 
       <hr className='mt-5 mb-5 container' style={{ opacity: '5%'}}/>
 
-      <section id='feed' className='container-fluid' style={{ minHeight: '50vh' }}>
+      <section id='feed' className='container-fluid' style={{ minHeight: '10vh' }}>
         <div className='container'>
           { feed.length < 1 ? emptyFeed : pubsArray }
         </div>
