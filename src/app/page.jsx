@@ -30,7 +30,7 @@ export default function App() {
         </div>
       </section>
 
-      <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
+      <hr className='mt-5 mb-5' style={{ opacity: '0%'}}/>
 
       <section id='about' className='container-fluid'>
         <div className='container'>
@@ -63,7 +63,7 @@ export default function App() {
         </div>
       </section>
 
-      <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
+      <hr className='mt-5 mb-5' style={{ opacity: '0%'}}/>
 
       <section id='mission' className='container-fluid'>
         <div className='container'>
@@ -101,7 +101,7 @@ export default function App() {
         </div>
       </section>
 
-      <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
+      <hr className='mt-5 mb-5' style={{ opacity: '0%'}}/>
 
       <section id='how' className='container-fluid'>
         <div className='container'>
@@ -164,7 +164,7 @@ export default function App() {
         </div>
       </section>
 
-      <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
+      <hr className='mt-5 mb-5' style={{ opacity: '0%'}}/>
 
       <section id='progress' className='container-fluid bg-success'>
         <div className='container'>
@@ -182,10 +182,18 @@ export default function App() {
         </div>
       </section>
 
-      <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
+      <hr className='mt-5 mb-5' style={{ opacity: '0%'}}/>
 
       <section id='learn' className='container-fluid'>
         <div className='container'>
+
+          <div>
+            <h2>Aprenda</h2>
+            <hr className='mt-3 mb-3' style={{ opacity: '1%'}}/>
+            <p className='text-secondary' style={{ maxWidth: '800px'}}>
+              Além de participar ativamente dos desafios e missões, você terá uma área reservada para aprender novas habilidades e ficar por dentro das inovações e notícias relacionadas ao desenvolvimento sustentável.
+            </p>
+          </div>
 
         </div>
       </section>
