@@ -166,8 +166,18 @@ export default function App() {
 
       <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
 
-      <section id='progress' className='container-fluid'>
+      <section id='progress' className='container-fluid bg-success'>
         <div className='container'>
+
+          <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
+          <div className='d-flex flex-column align-items-center justify-content-center'>
+            <h2 className='text-center text-white'>Aumente seu progresso</h2>
+            <hr className='mt-4 mb-4 container text-white' style={{ opacity: '15%', border: '2px solid white', maxWidth: '800px'}}/>
+            <p className='text-center text-white' style={{ opacity: '75%', maxWidth: '800px'}}>
+              Você também tem uma visão do progresso da sua própria jornada sustentável, onde você tem acesso a todas às suas atividades e desafios individuais. Podendo criar um histórico de gastos como água e energia, além de anexar suas contas. Na sua jornada sustentável você pode realizar atividades interativas e lições que lhe façam exercitar o pensamento sustentável.
+            </p>
+          </div>
+          <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
 
         </div>
       </section>
