@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Footer from '@/components/Footer';
 import Header from '@/components/HeaderApp';
 
-export default function Home() {
+export default function Challenges() {
 
   return (
     <main>

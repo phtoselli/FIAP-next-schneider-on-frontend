@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Image from 'next/image';
 import logo from '../images/logo.png';
 
-export default function Header() {
+export default function HeaderApp() {
   return (
     <header className='container-fluid mb-5 bg-white'>
       <div className='container'>
