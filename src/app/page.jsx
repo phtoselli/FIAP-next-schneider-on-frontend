@@ -200,13 +200,21 @@ export default function App() {
 
       <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
 
-      <section id='painel' className='container-fluid'>
+      <section id='painel' className='container-fluid  d-flex align-items-center justify-content-center' style={{ height: '40vh', backgroundImage: `url('/banner.png')`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
         <div className='container'>
+
+          <div className='row'>
+            <div className="col-12 col-md-6"></div>
+
+            <div className="col-12 col-md-6">
+              <h1 className='text-white' style={{ textShadow: '1px 1px 8px black' }}>Crie sua conta e comece a construir um mundo melhor agora.</h1>
+              <hr className='mt-3 mb-3' style={{ opacity: '0%'}}/>
+              <a className='btn btn-success' href="/">Crie sua conta</a>
+            </div>
+          </div>
 
         </div>
       </section>
-
-      <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
 
       <Footer />
     </main>
