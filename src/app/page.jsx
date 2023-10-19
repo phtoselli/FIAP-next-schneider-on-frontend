@@ -11,8 +11,8 @@ export default function App() {
 
       <section id='hero' className='pt-5 pb-5 container-fluid' style={{ backgroundImage: `url('/hero.jpg')`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
         <div className='container'>
-
           <div className='row'>
+
             <div className='col-12 col-md-6'>
               <p>.</p>
             </div>
@@ -25,8 +25,8 @@ export default function App() {
                 <a className='btn btn-success' href="/">Entre agora</a>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </section>
 
@@ -34,7 +34,32 @@ export default function App() {
 
       <section id='pitch' className='container-fluid'>
         <div className='container'>
+          <div className='row'>
 
+            <div className='col-12 d-flex align-items-center flex-column'>
+              <h2 className='text-center'>Saiba mais sobre o projeto</h2>
+              <hr className='mt-3 mb-3' style={{ opacity: '1%' }}/>
+              <p className='text-center text-secondary' style={{ maxWidth: '800px' }}>
+                Com o intuito de incentivar atitudes sustentáveis, foi criada a plataforma social gamificada chamada "On".
+                Nessa plataforma, os usuários podem se envolver em causas sociais e ambientais em prol do desenvolvimento sustentável. Isso proporciona uma maneira envolvente e motivadora de adotar comportamentos mais responsáveis em relação ao consumo e ao meio ambiente. A plataforma foi desenvolvida para atender à comunidade de colaboradores da Schneider Eletric, com o objetivo de levar o comprometimento com a sustentabilidade para o dia a dia de cada um dos colaboradores.
+              </p>
+            </div>
+
+            <hr className='mt-3 mb-3' style={{ opacity: '1%' }}/>
+
+            <div className='col-12 d-flex align-items-center flex-column'>
+              <iframe
+                className='rounded-4'
+                width={500}
+                height={350}
+                src="https://www.youtube.com/embed/xTo2gSe3VRU?si=8ZP5uMkVuWg70Ysy"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+          </div>
         </div>
       </section>
 
