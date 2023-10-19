@@ -1,3 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 import Image from 'next/image';
 
 import logo1 from '../images/logo.png';
@@ -9,7 +12,7 @@ export default function Footer() {
       <div className='container'>
         <div className='row'>
           <div className='col-12 col-md-4 p-4'>
-            <Image src={logo1}  width={100}/>
+            <Image src={logo1}  width={100} alt='logo'/>
             <p className='text-secondary'>
               Pensando na importância de encorajar as pessoas a adquirirem atitudes sustentáveis, criamos uma plataforma social gamificada onde os usuários podem se engajar em causas sociais e ambientais, em prol do desenvolvimento sustentável.
             </p>
@@ -36,7 +39,7 @@ export default function Footer() {
           </div>
 
           <div className='col-12 col-md-4 d-flex justify-content-end align-items-center'>
-            <Image src={logo2} height={60}/>
+            <Image src={logo2} height={60} alt='logo'/>
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function App() {
               <div className='d-flex justify-content-between flex-column' style={{ maxWidth: '400px' }}>
                 <h1 className='text-white' style={{ textShadow: '1px 1px 8px black' }}>Colaborador Schneider, seja bem-vindo ao ON!</h1>
                 <p className='text-white' style={{ opacity: '70%' }}>Faça seu cadastro e junte-se à uma rede de pessoas unidas no propósitos de fazer das suas ações, um passo para o desenvolvimento sustentável.</p>
-                <Image src={schneider} width={200}/>
+                <Image src={schneider} width={200} alt='shcneider logo'/>
                 <a className='btn btn-success' href="/home">Entre agora</a>
               </div>
             </div>
