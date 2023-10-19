@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import logo1 from '../images/logo.png';
-import logo2 from '../images/logo.png';
+import logo2 from '../images/schneider.png';
 
 export default function Footer() {
   return (
