@@ -55,7 +55,7 @@ export default function App() {
                 src="https://www.youtube.com/embed/xTo2gSe3VRU?si=8ZP5uMkVuWg70Ysy"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
+                allowFullScreen>
               </iframe>
             </div>
 
