@@ -103,6 +103,85 @@ export default function App() {
 
       <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
 
+      <section id='how' className='container-fluid'>
+        <div className='container'>
+
+          <div>
+            <h2 className='text-center'>Como funciona</h2>
+            <hr className='mt-2 mb-2' style={{ opacity: '1%'}}/>
+          </div>
+
+          <hr className='mt-4 mb-4 container' style={{ opacity: '15%'}}/>
+
+          <div className='row'>
+            <div className='col-12 card p-4 mb-2 container'>
+              <div className='d-flex'>
+                <div className='me-4 d-flex align-items-center justify-content-center' style={{ width: "100px"}}>
+                  <i className='text-secondary bi bi-1-circle fs-1'></i>
+                </div>
+
+                <div>
+                  <h3>Crie sua conta</h3>
+                  <p className='text-secondary'>
+                    Faça seu cadastro seguindo o passo a passo da plataforma. É rápido e fácil.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-12 card p-4 mb-2 container'>
+              <div className='d-flex'>
+                <div className='me-4 d-flex align-items-center justify-content-center' style={{ width: "100px"}}>
+                  <i className='text-secondary bi bi-2-circle fs-1'></i>
+                </div>
+
+                <div>
+                  <h3>Participe de desafios</h3>
+                  <p className='text-secondary'>
+                    Todos os dias, semanas e meses, novos desafios estarão disponíveis para ganhar pontos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-12 card p-4 mb-2 container'>
+              <div className='d-flex'>
+                <div className='me-4 d-flex align-items-center justify-content-center' style={{ width: "100px"}}>
+                  <i className='text-secondary bi bi-3-circle fs-1'></i>
+                </div>
+
+                <div>
+                  <h3>Suba de nível</h3>
+                  <p className='text-secondary'>
+                    Níveis maiores te colocam no topo do ranking. Quanto mais desafios você cumprir, mais reconhecimento terá.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
+
+      <section id='progress' className='container-fluid'>
+        <div className='container'>
+
+        </div>
+      </section>
+
+      <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
+
+      <section id='learn' className='container-fluid'>
+        <div className='container'>
+
+        </div>
+      </section>
+
+      <hr className='mt-5 mb-5' style={{ opacity: '1%'}}/>
+
       <section id='painel' className='container-fluid'>
         <div className='container'>
 
