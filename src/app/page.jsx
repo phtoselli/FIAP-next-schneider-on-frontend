@@ -1,4 +1,6 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+
 import Image from 'next/image';
 
 export default function App() {
@@ -23,6 +25,8 @@ export default function App() {
 
         </div>
       </section>
+
+      <Footer />
     </main>
   )
 }
