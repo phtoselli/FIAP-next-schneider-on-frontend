@@ -22,7 +22,7 @@ export default function App() {
                 <h1 className='text-white' style={{ textShadow: '1px 1px 8px black' }}>Colaborador Schneider, seja bem-vindo ao ON!</h1>
                 <p className='text-white' style={{ opacity: '70%' }}>Faça seu cadastro e junte-se à uma rede de pessoas unidas no propósitos de fazer das suas ações, um passo para o desenvolvimento sustentável.</p>
                 <Image src={schneider} width={200}/>
-                <a className='btn btn-success' href="/">Entre agora</a>
+                <a className='btn btn-success' href="/home">Entre agora</a>
               </div>
             </div>
 
@@ -209,7 +209,7 @@ export default function App() {
             <div className="col-12 col-md-6">
               <h1 className='text-white' style={{ textShadow: '1px 1px 8px black' }}>Crie sua conta e comece a construir um mundo melhor agora.</h1>
               <hr className='mt-3 mb-3' style={{ opacity: '0%'}}/>
-              <a className='btn btn-success' href="/">Crie sua conta</a>
+              <a className='btn btn-success' href="/home">Crie sua conta</a>
             </div>
           </div>
 
