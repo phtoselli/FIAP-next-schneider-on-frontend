@@ -60,7 +60,7 @@ export default function Home() {
                 <div className="card-body">
                   <h5 className="card-title">Conferência da sustentabiliade</h5>
                   <p className="card-text">Explore soluções e práticas sustentáveis com especialistas rumo a um Futuro Sustentável. Junte-se a nós.</p>
-                  <a href="/home" className="btn btn-success">Participe</a>
+                  <a href="/events/conferencia-sustentavel" className="btn btn-success">Participe</a>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
                 <div className="card-body">
                   <h5 className="card-title">Feirinha da sustentabilidade</h5>
                   <p className="card-text">Descubra produtos ecológicos, oficinas práticas e alimentos orgânicos na nossa eco-feira dedicada à sustentabilidade.</p>
-                  <a href="/home" className="btn btn-success">Participe</a>
+                  <a href="/events/feirinha-da-sustentabilidade" className="btn btn-success">Participe</a>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Home() {
                 <div className="card-body">
                   <h5 className="card-title">Corrida pela Sustentabilidade</h5>
                   <p className="card-text">Participe da corrida ecológica para promover aptidão sustentável e apoiar projetos ambientais. Junte-se a nós!</p>
-                  <a href="/home" className="btn btn-success">Participe</a>
+                  <a href="/events/corrida-pela-sustentabilidade" className="btn btn-success">Participe</a>
                 </div>
               </div>
             </div>

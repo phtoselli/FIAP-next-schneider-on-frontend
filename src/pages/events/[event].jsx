@@ -4,14 +4,14 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-import json from '@/database/challenges.json';
+import json from '@/database/events.json';
 
 import Error from '@/components/Error';
 import Footer from '@/components/Footer';
 import Header from '@/components/HeaderApp';
 import Loading from '@/components/Loading';
 
-export default function Challenges() {
+export default function Events() {
   const router = useRouter();
 
   const [url, setUrl] = useState();
@@ -26,8 +26,8 @@ export default function Challenges() {
   });
 
   useEffect(() => {
-    setUrl(router.query.challenge);
-  }, [router.query.challenge]);
+    setUrl(router.query.event);
+  }, [router.query.event]);
 
   function challengeGenerate(param){
     if (!data[param] || !data) {
@@ -67,7 +67,7 @@ export default function Challenges() {
 
       <div className='container'>
         <div className='container'>
-          <a href="/challenges">
+          <a href="/home">
             <i className='btn btn-outline-success rounded-circle bi bi-chevron-left fs-4 fw-bold'></i>
           </a>
         </div>
