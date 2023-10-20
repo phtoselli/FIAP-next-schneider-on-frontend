@@ -48,7 +48,7 @@ export default function Challenges() {
               data[param].content.map((content, key) => {
                 return (
                   <div className='container mt-2 mb-2' key={key}>
-                    <p className='text-secondary'><span>{content.emphasis}</span> {content.paragraph}</p>
+                    <p className='text-secondary'><span className='fw-semibold'>{content.emphasis}</span> {content.paragraph}</p>
                   </div>
                 )
               })

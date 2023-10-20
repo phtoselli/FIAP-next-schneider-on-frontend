@@ -41,14 +41,15 @@ export default function Progress() {
         <div className='container p-5 rounded-2' style={{ position: 'relative', backgroundColor: '#fefefe', margin: 'auto', width: '100%', marginTop: '50px' }}>
           <h4>{modalTitle}</h4>
           <p className='text-secondary'>{modalContent}</p>
-          <button className='btn btn-success me-3' onClick={() => setModal('')}>Iniciar desafio</button>
-          <button className='btn btn-outline-success' onClick={() => setModal('')}>Fechar</button>
+          <button className='btn btn-success' onClick={() => setModal('')}>Fechar</button>
         </div>
       </div>
     );
 
     setModal(modalHtml);
   }
+
+  const message = 'Conquista bloqueada: Você precisa concluir todos os desafios anteriores primeiro!'
 
   return (
     <main>
@@ -62,12 +63,12 @@ export default function Progress() {
         </div>
 
         <div className="container p-3 pb-5 rounded-2" style={{ backgroundColor: '#f0f0f0' }}>
-          <p className='text-secondary fs-5'>Desafios do nível 1</p>
+          <p className='text-secondary fs-5'>Conquistas do nível 1</p>
 
           <div className='container d-flex align-items-center justify-content-between' style={{ maxWidth: '800px'}}>
             <div className=''>
               <div className="btn btn-success rounded-circle d-flex align-items-center justify-content-center" style={{ width: '100%', height: '100%' }}>
-                <i className='bi bi-egg-fried fs-4' id='0' onClick={(e) => showModal(e)}></i>
+                <i className='bi bi-cloud-check fs-4' id='0' onClick={(e) => showModal(e)}></i>
               </div>
             </div>
 
@@ -101,36 +102,36 @@ export default function Progress() {
         <hr className='mt-2 mb-2' style={{ opacity: '0%' }} />
 
         <div className="container p-3 pb-5 rounded-2" style={{ backgroundColor: '#f0f0f0' }}>
-          <p className='text-secondary fs-5'>Desafios do nível 2</p>
+          <p className='text-secondary fs-5'>Conquistas do nível 2</p>
 
           <div className='container d-flex align-items-center justify-content-between' style={{ maxWidth: '800px'}}>
             <div className=''>
               <div className="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: '100%', height: '100%' }}>
-                <i className='bi bi-lock-fill fs-4' onClick={() => alert('Desafio bloqueado: Você precisa concluir todos os desafios anteriores.')}></i>
+                <i className='bi bi-lock-fill fs-4' onClick={() => alert(message)}></i>
               </div>
             </div>
 
             <div className=''>
               <div className="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: '100%', height: '100%' }}>
-                <i className='bi bi-lock-fill fs-4' onClick={() => alert('Desafio bloqueado: Você precisa concluir todos os desafios anteriores.')}></i>
+                <i className='bi bi-lock-fill fs-4' onClick={() => alert(message)}></i>
               </div>
             </div>
 
             <div className=''>
               <div className="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: '100%', height: '100%' }}>
-                <i className='bi bi-lock-fill fs-4' onClick={() => alert('Desafio bloqueado: Você precisa concluir todos os desafios anteriores.')}></i>
+                <i className='bi bi-lock-fill fs-4' onClick={() => alert(message)}></i>
               </div>
             </div>
 
             <div className=''>
               <div className="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: '100%', height: '100%' }}>
-                <i className='bi bi-lock-fill fs-4' onClick={() => alert('Desafio bloqueado: Você precisa concluir todos os desafios anteriores.')}></i>
+                <i className='bi bi-lock-fill fs-4' onClick={() => alert(message)}></i>
               </div>
             </div>
 
             <div className=''>
               <div className="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: '100%', height: '100%' }}>
-                <i className='bi bi-lock-fill fs-4' onClick={() => alert('Desafio bloqueado: Você precisa concluir todos os desafios anteriores.')}></i>
+                <i className='bi bi-lock-fill fs-4' onClick={() => alert(message)}></i>
               </div>
             </div>
 
@@ -141,36 +142,36 @@ export default function Progress() {
         <hr className='mt-2 mb-2' style={{ opacity: '0%' }} />
 
         <div className="container p-3 pb-5 rounded-2" style={{ backgroundColor: '#f0f0f0' }}>
-          <p className='text-secondary fs-5'>Desafios do nível 3</p>
+          <p className='text-secondary fs-5'>Conquistas do nível 3</p>
 
           <div className='container d-flex align-items-center justify-content-between' style={{ maxWidth: '800px'}}>
             <div className=''>
               <div className="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: '100%', height: '100%' }}>
-                <i className='bi bi-lock-fill fs-4' onClick={() => alert('Desafio bloqueado: Você precisa concluir todos os desafios anteriores.')}></i>
+                <i className='bi bi-lock-fill fs-4' onClick={() => alert(message)}></i>
               </div>
             </div>
 
             <div className=''>
               <div className="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: '100%', height: '100%' }}>
-                <i className='bi bi-lock-fill fs-4' onClick={() => alert('Desafio bloqueado: Você precisa concluir todos os desafios anteriores.')}></i>
+                <i className='bi bi-lock-fill fs-4' onClick={() => alert(message)}></i>
               </div>
             </div>
 
             <div className=''>
               <div className="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: '100%', height: '100%' }}>
-                <i className='bi bi-lock-fill fs-4' onClick={() => alert('Desafio bloqueado: Você precisa concluir todos os desafios anteriores.')}></i>
+                <i className='bi bi-lock-fill fs-4' onClick={() => alert(message)}></i>
               </div>
             </div>
 
             <div className=''>
               <div className="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: '100%', height: '100%' }}>
-                <i className='bi bi-lock-fill fs-4' onClick={() => alert('Desafio bloqueado: Você precisa concluir todos os desafios anteriores.')}></i>
+                <i className='bi bi-lock-fill fs-4' onClick={() => alert(message)}></i>
               </div>
             </div>
 
             <div className=''>
               <div className="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: '100%', height: '100%' }}>
-                <i className='bi bi-lock-fill fs-4' onClick={() => alert('Desafio bloqueado: Você precisa concluir todos os desafios anteriores.')}></i>
+                <i className='bi bi-lock-fill fs-4' onClick={() => alert(message)}></i>
               </div>
             </div>
 
