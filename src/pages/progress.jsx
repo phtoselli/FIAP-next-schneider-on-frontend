@@ -11,24 +11,24 @@ export default function Progress() {
 
   const modalInfos = [
     {
-      title: 'Desafio da Alimentação Sustentável!',
-      value: 'Vamos abraçar um desafio que beneficia nosso planeta e nossa saúde? 🌍 Opte por uma dieta mais sustentável, reduzindo o consumo de carne e produtos de origem animal, e abrace uma alimentação baseada em vegetais! 🥦🥕 Escolha alimentos locais e sazonais, reduzindo a pegada de carbono associada ao transporte de alimentos. Cada escolha que fazemos importa! 🍅🌽Mostre seu compromisso com um estilo de vida mais verde! 💚 Tire uma foto com uma deliciosa refeição sustentável e compartilhe no Ôn com a hashtag #AlimentaçãoSustentável. Incentive amigos e seguidores a experimentar novos sabores e a adotar práticas alimentares que cuidam do meio ambiente. Juntos, podemos fazer a diferença! 🌿😃'
+      "title": "Desafio da Emissão Limpa!",
+      "value": "Vamos abraçar um desafio que beneficia nosso planeta? 🌍 Reduza sua pegada de carbono, optando por formas mais sustentáveis de transporte e consumo de energia. 🚲🌞 Escolha o transporte público, caronas compartilhadas, bicicletas ou caminhadas para diminuir as emissões de gases poluentes. Cada ação conta! 🌱💨 Mostre seu compromisso com um estilo de vida mais verde! 🌳 Tire uma foto adotando práticas ecológicas e compartilhe no Ôn com a hashtag #EmissãoLimpa. Incentive amigos e seguidores a reduzir suas emissões e a adotar comportamentos que cuidam do meio ambiente. Juntos, podemos fazer a diferença! 💚😃"
     },
     {
-      title: 'Desafio da Economia de Energia em Casa!',
-      value: '💡Vamos embarcar em um desafio para reduzir nosso consumo de energia e fazer a diferença? 💚 Faça pequenas mudanças no seu dia a dia para economizar energia em casa!Apague as luzes em ambientes vazios, desconecte aparelhos eletrônicos que não estão em uso, utilize lâmpadas de baixo consumo e aproveite ao máximo a luz natural. Cada gesto conta! 🌞🔌Mostre o seu comprometimento com um futuro mais eficiente! 💪 Tire uma foto praticando uma dessas ações e compartilhe nas redes sociais com a hashtag #DesafioEconomiaEnergia.Incentive amigos e familiares a seguir o exemplo e a adotar hábitos mais sustentáveis em relação à energia. Juntos, podemos fazer um impacto positivo! 💡😃Aceite o desafio e marque três pessoas para participarem também. Vamos criar uma onda de consciência energética e preservar nosso planeta. Você topa? 💚💡 #DesafioEconomiaEnergia #Sustentabilidade #MenosEnergiaMaisFuturo'
+      "title": 'Desafio da Economia de Energia em Casa!',
+      "value": '💡Vamos embarcar em um desafio para reduzir nosso consumo de energia e fazer a diferença? 💚 Faça pequenas mudanças no seu dia a dia para economizar energia em casa!Apague as luzes em ambientes vazios, desconecte aparelhos eletrônicos que não estão em uso, utilize lâmpadas de baixo consumo e aproveite ao máximo a luz natural. Cada gesto conta! 🌞🔌Mostre o seu comprometimento com um futuro mais eficiente! 💪 Tire uma foto praticando uma dessas ações e compartilhe nas redes sociais com a hashtag #DesafioEconomiaEnergia.Incentive amigos e familiares a seguir o exemplo e a adotar hábitos mais sustentáveis em relação à energia. Juntos, podemos fazer um impacto positivo! 💡😃Aceite o desafio e marque três pessoas para participarem também. Vamos criar uma onda de consciência energética e preservar nosso planeta. Você topa? 💚💡 #DesafioEconomiaEnergia #Sustentabilidade #MenosEnergiaMaisFuturo'
     },
     {
-      title: 'Desafio do Plantio de Árvores!',
-      value: '🌳Vamos aceitar um desafio que contribui para um mundo mais verde? 🌍 Plante uma árvore e faça parte dessa transformação positiva! Escolha um local adequado, obtenha uma muda de árvore nativa ou adequada ao seu clima e solo, e plante-a com carinho. Cada árvore plantada é um presente para o futuro! 🌱🌳 Mostre seu comprometimento com a natureza! 💚 Tire uma foto plantando sua árvore e compartilhe no Ôn com a hashtag #DesafioPlantioÁrvores.'
+      "title": 'Desafio do Plantio de Árvores!',
+      "value": '🌳Vamos aceitar um desafio que contribui para um mundo mais verde? 🌍 Plante uma árvore e faça parte dessa transformação positiva! Escolha um local adequado, obtenha uma muda de árvore nativa ou adequada ao seu clima e solo, e plante-a com carinho. Cada árvore plantada é um presente para o futuro! 🌱🌳 Mostre seu comprometimento com a natureza! 💚 Tire uma foto plantando sua árvore e compartilhe no Ôn com a hashtag #DesafioPlantioÁrvores.'
     },
     {
-      title: 'Desafio da Reciclagem Inteligente!',
-      value: '♻️Vamos encarar um desafio que ajuda a preservar nosso planeta? 🌍 Recicle de forma consciente e inspire outros a fazerem o mesmo!Aqui está o desafio: escolha um dia para revisar sua casa e identificar itens recicláveis que poderiam ter sido descartados erroneamente. Separe esses materiais e coloque-os na coleta seletiva. Garanta que cada objeto esteja no lugar certo para reciclagem! ♻️🗑️. Mostre seu comprometimento com a causa! 💚 Tire uma foto com sua pilha de materiais recicláveis e compartilhe nas rede social Ôn com a hashtag #DesafioReciclagemInteligente.'
+      "title": 'Desafio da Reciclagem Inteligente!',
+      "value": '♻️Vamos encarar um desafio que ajuda a preservar nosso planeta? 🌍 Recicle de forma consciente e inspire outros a fazerem o mesmo!Aqui está o desafio: escolha um dia para revisar sua casa e identificar itens recicláveis que poderiam ter sido descartados erroneamente. Separe esses materiais e coloque-os na coleta seletiva. Garanta que cada objeto esteja no lugar certo para reciclagem! ♻️🗑️. Mostre seu comprometimento com a causa! 💚 Tire uma foto com sua pilha de materiais recicláveis e compartilhe nas rede social Ôn com a hashtag #DesafioReciclagemInteligente.'
     },
     {
-      title: 'Desafio da Economia de Água com o App Ôn!',
-      value: '💧Vamos encarar um desafio que faz a diferença na preservação dos recursos hídricos? 🌊 Use o aplicativo Ôn para se comprometer a economizar água e inspire outros a adotarem práticas mais conscientes!Aqui está o desafio: defina metas diárias para reduzir o consumo de água em sua casa. Feche a torneira enquanto escova os dentes, tome banhos mais curtos, conserte vazamentos e aproveite a água de forma mais eficiente. Cada gota poupada conta! 💡💧Mostre seu comprometimento com um uso responsável da água! 💚 Tire uma captura de tela do seu progresso no aplicativo Ôn e compartilhe nas redes sociais com a hashtag #DesafioEconomiaÁgua.'
+      "title": 'Desafio da Economia de Água com o App Ôn!',
+      "value": '💧Vamos encarar um desafio que faz a diferença na preservação dos recursos hídricos? 🌊 Use o aplicativo Ôn para se comprometer a economizar água e inspire outros a adotarem práticas mais conscientes!Aqui está o desafio: defina metas diárias para reduzir o consumo de água em sua casa. Feche a torneira enquanto escova os dentes, tome banhos mais curtos, conserte vazamentos e aproveite a água de forma mais eficiente. Cada gota poupada conta! 💡💧Mostre seu comprometimento com um uso responsável da água! 💚 Tire uma captura de tela do seu progresso no aplicativo Ôn e compartilhe nas redes sociais com a hashtag #DesafioEconomiaÁgua.'
     },
   ];
 
@@ -43,6 +43,8 @@ export default function Progress() {
           <p className='text-secondary'>{modalContent}</p>
           <button className='btn btn-success' onClick={() => setModal('')}>Fechar</button>
         </div>
+
+        <hr className='mt-5 mb-5' style={{ opacity: '0%' }} />
       </div>
     );
 
