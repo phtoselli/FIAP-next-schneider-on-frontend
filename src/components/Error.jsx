@@ -6,7 +6,7 @@ export default function Error(props) {
     <div className='container'>
       <div className='container d-flex flex-column align-items-center justify-content-center'>
         <h1>{ props.error ? props.error : 'Ops!' }</h1>
-        <h4 className='text-secondary'>Desafio não encontrado</h4>
+        <h4 className='text-secondary'>{ props.message ? props.message : 'Ocorreu um erro.' }</h4>
       </div>
     </div>
   )

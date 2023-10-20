@@ -1,0 +1,27 @@
+[
+  {
+    "id": "mundo-climatico",
+    "title": "Mundo Climático",
+    "description": "Combata as mudanças climáticas, tomando decisões cruciais para reduzir emissões e salvar o planeta."
+  },
+  {
+    "id": "energia-limpa",
+    "title": "Energia limpa",
+    "description": "Economize energia, complete missões e desbloqueie conquistas enquanto aprende a usar energia limpa."
+  },
+  {
+    "id": "heroi-da-fauna",
+    "title": "Herói da Fauna",
+    "description": "Salve espécies em risco, restaurando habitats e combatendo a perda de biodiversidade."
+  },
+  {
+    "id": "reciclagem-master",
+    "title": "Reciclagem Master",
+    "description": "Colete, recicle e ganhe pontos à medida que aprimora suas habilidades de reciclagem em níveis desafiadores."
+  },
+  {
+    "id": "fazenda-verde",
+    "title": "Fazenda Verde",
+    "description": "Gerencie sua própria fazenda sustentável, cultivando alimentos orgânicos e evitando o desperdício."
+  }
+]

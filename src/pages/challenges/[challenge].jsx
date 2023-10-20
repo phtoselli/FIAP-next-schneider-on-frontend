@@ -17,6 +17,10 @@ export default function Challenges() {
   const [data, setData] = useState();
 
   useEffect(() => {
+    if(!json){
+      setData(null);
+    }
+
     setData(json);
   });
 
@@ -27,7 +31,7 @@ export default function Challenges() {
   function challengeGenerate(param){
     if (!data[param] || !data) {
       return (
-        <Error error={404} />
+        <Error error={404} message={'Essa página não existe.'} />
       )
     }
 
