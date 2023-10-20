@@ -38,8 +38,8 @@ You can visit the project [here](https://schneider-on.vercel.app/)
 
 ## Authors
 
-| [<img src="https://avatars.githubusercontent.com/u/73919445?v=4&s=115"><br><sub>@phtoselli</sub>](https://www.linkedin.com/in/phtoselli/) |
-| :---: |
+| [<img src="https://avatars.githubusercontent.com/u/73919445?v=4&s=115"><br><sub>@phtoselli</sub>](https://www.linkedin.com/in/phtoselli/) | [<img src="https://avatars.githubusercontent.com/u/98557538?v=4&s=80"><br><sub>@JaquelineNovaes</sub>](https://github.com/JaquelineNovaes) | [<img src="https://avatars.githubusercontent.com/u/135247016?v=4&s=115"><br><sub>@Beccanogueira</sub>](https://github.com/Beccanogueira) | [<img src="https://avatars.githubusercontent.com/u/124810959?v=4&s=115"><br><sub>@Henriquedev0</sub>](https://github.com/Henriquedev0) | [<img src="https://avatars.githubusercontent.com/u/135075505?v=4&s=115"><br><sub>@SophiaARL</sub>](https://github.com/SophiaARL) |
+| :---: | :---: | :---: | :---: | :---: |
 
 #
 
