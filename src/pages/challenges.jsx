@@ -112,6 +112,8 @@ export default function Challenges() {
         </div>
       </section>
 
+      <hr className='mt-5 mb-5' style={{ opacity: '0%' }} />
+
       <Footer />
     </main>
   )
