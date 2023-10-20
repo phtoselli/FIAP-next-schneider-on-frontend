@@ -28,7 +28,7 @@ export default function Fundation() {
               <h5 className="card-title mt-3">Tomorrow Rising - Líbano</h5>
               <hr className='container mt-2 mb-3' style={{ opacity: '10%'}} />
               <p className="card-text text-secondary">A Fundação criou uma campanha de doações e ajudou as pessoas mais afetadas restaurando a energia nas casas.</p>
-              <a href="" className="btn btn-success">Saiba mais</a>
+              <a href="https://volunteerin.se.com/#/" target='_blank' className="btn btn-success">Saiba mais</a>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ export default function Fundation() {
               <h5 className="card-title mt-3">Tomorrow Rising - Índia</h5>
               <hr className='container mt-2 mb-3' style={{ opacity: '10%'}} />
               <p className="card-text text-secondary">A Schneider Electric Índia e Fundações estabeleceram uma campanha de arrecadação de fundos para apoiar as comunidades indianas afetadas.</p>
-              <a href="" className="btn btn-success">Saiba mais</a>
+              <a href="https://volunteerin.se.com/#/" target='_blank' className="btn btn-success">Saiba mais</a>
             </div>
           </div>
 
@@ -48,7 +48,7 @@ export default function Fundation() {
               <h5 className="card-title mt-3">Tomorrow Rising - Africa</h5>
               <hr className='container mt-2 mb-3' style={{ opacity: '10%'}} />
               <p className="card-text text-secondary">Distribuição de alimentos a famílias e crianças pequenas no Quênia durante a pandemia, de modo a permitir o acesso a refeições nutritivas.</p>
-              <a href="" className="btn btn-success">Saiba mais</a>
+              <a href="https://volunteerin.se.com/#/" target='_blank' className="btn btn-success">Saiba mais</a>
             </div>
           </div>
 
@@ -58,7 +58,7 @@ export default function Fundation() {
               <h5 className="card-title mt-3">Tomorrow Rising - Myanmar</h5>
               <hr className='container mt-2 mb-3' style={{ opacity: '10%'}} />
               <p className="card-text text-secondary">A Fundação criou uma campanha de doações e ajudou as pessoas mais afetadas restaurando a energia nas casas.</p>
-              <a href="" className="btn btn-success">Saiba mais</a>
+              <a href="https://volunteerin.se.com/#/" target='_blank' className="btn btn-success">Saiba mais</a>
             </div>
           </div>
 
