@@ -20,9 +20,9 @@ export default function Footer() {
 
           <div className='col-12 col-md-4 p-4'>
             <h3>Sobre</h3>
-            <a className='link-success' href='/'>Politica e privacidade</a>
+            <a className='link-success' href='/privacy'>Politica e privacidade</a>
             <br />
-            <a className='link-success' href='/'>Termos e condições</a>
+            <a className='link-success' href='/terms'>Termos e condições</a>
           </div>
 
           <div className='col-12 col-md-4 p-4'>
