@@ -27,7 +27,7 @@ export default function Footer() {
 
           <div className='col-12 col-md-4 p-4'>
             <h3>Entre em contato</h3>
-            <span className='text-secondary'>on@contato.com</span>
+            <span className='text-secondary'>schneider.on.contact@gmail.com</span>
           </div>
         </div>
 

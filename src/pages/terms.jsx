@@ -53,6 +53,11 @@ export default function Terms() {
             Reservamo-nos o direito de encerrar ou suspender sua conta a nosso critério, sem aviso prévio, se violar estes Termos e Condições.
           </p>
         </div>
+
+        <div className="container">
+          <hr className='mt-4 mb-4' style={{ opacity: '10%' }} />
+          <span className='text-secondary'>Confira nossas <a className='link-success' href="/privacy">Políticas de privacidade</a></span>
+        </div>
       </section>
 
       <hr className='mt-5 mb-5' style={{ opacity: '0%' }} />
