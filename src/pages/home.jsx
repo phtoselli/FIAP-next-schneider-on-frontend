@@ -28,6 +28,12 @@ export default function Home() {
     </div>
   );
 
+  const pubsCount = (
+    <div className='container'>
+      <p className='text-secondary' style={{ fontSize: '0.8rem'}}>Total de publicações: {pubsArray.length}</p>
+    </div>
+  )
+
   useEffect(() => {
     console.log(pubsArray);
     const feedArray = feed.map((item) => {
@@ -86,7 +92,9 @@ export default function Home() {
       <hr className='mt-5 mb-5 container' style={{ opacity: '5%'}}/>
 
       <section id='pub' className='container-fluid'>
+
         <div className='container'>
+        <h2>Publicações</h2>
 
           <div>
             <div className='p-2 text-secondary'>
@@ -106,6 +114,7 @@ export default function Home() {
       <section id='feed' className='container-fluid' style={{ minHeight: '10vh' }}>
         <div className='container'>
           { feed.length < 1 ? emptyFeed : pubsArray }
+          { feed.length < 1 ? '' : pubsCount }
         </div>
       </section>
 
