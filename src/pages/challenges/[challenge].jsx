@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 
 import json from '@/database/challenges.json';
 
+import Error from '@/components/Error';
 import Footer from '@/components/Footer';
 import Header from '@/components/HeaderApp';
 
@@ -26,12 +27,7 @@ export default function Challenges() {
   function challengeGenerate(param){
     if (!data[param] || !data) {
       return (
-        <div className='container'>
-          <div className='container d-flex flex-column align-items-center justify-content-center'>
-            <h1>404</h1>
-            <h4 className='text-secondary'>Desafio não encontrado</h4>
-          </div>
-        </div>
+        <Error error={404} />
       )
     }
 
