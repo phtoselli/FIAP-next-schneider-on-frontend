@@ -22,7 +22,7 @@ export default function Fundation() {
       <section className='container'>
         <div className="row">
 
-          <div className="col-12 col-xl-3 col-lg-6 p-4">
+          <div className="col-12 col-lg-6 p-4">
             <div className="card p-4">
               <div className='container rounded-2' style={{ backgroundImage: `url('/c1.png')`, height: '200px', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
               <h5 className="card-title mt-3">Tomorrow Rising - Líbano</h5>
@@ -32,7 +32,7 @@ export default function Fundation() {
             </div>
           </div>
 
-          <div className="col-12 col-xl-3 col-lg-6 p-4">
+          <div className="col-12 col-lg-6 p-4">
             <div className="card p-4">
               <div className='container rounded-2' style={{ backgroundImage: `url('/c2.png')`, height: '200px', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
               <h5 className="card-title mt-3">Tomorrow Rising - Índia</h5>
@@ -42,7 +42,7 @@ export default function Fundation() {
             </div>
           </div>
 
-          <div className="col-12 col-xl-3 col-lg-6 p-4">
+          <div className="col-12 col-lg-6 p-4">
             <div className="card p-4">
               <div className='container rounded-2' style={{ backgroundImage: `url('/c3.png')`, height: '200px', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
               <h5 className="card-title mt-3">Tomorrow Rising - Africa</h5>
@@ -52,7 +52,7 @@ export default function Fundation() {
             </div>
           </div>
 
-          <div className="col-12 col-xl-3 col-lg-6 p-4">
+          <div className="col-12 col-lg-6 p-4">
             <div className="card p-4">
               <div className='container rounded-2' style={{ backgroundImage: `url('/c4.png')`, height: '200px', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
               <h5 className="card-title mt-3">Tomorrow Rising - Myanmar</h5>
