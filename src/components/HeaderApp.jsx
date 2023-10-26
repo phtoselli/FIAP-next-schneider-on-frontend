@@ -24,10 +24,9 @@ export default function HeaderApp() {
 
   function showModal() {
     const modalHtml = (
-      <div className='bg-white' style={{ position: 'absolute', right: 0, top: 0, zIndex: 1, boxShadow: '-1px -1px 30px #0f0f0f', height: '100vh', width: '70vw' }}>
+      <div className='bg-white' style={{ position: 'fixed', top: 0, right: 0, zIndex: 1, boxShadow: '-1px -1px 30px #0f0f0f', height: '100vh', width: '75vw' }}>
         <div className='row'>
-          <div className='col-11 text-end'>
-            <hr className='mt-3 mb-3' style={{ opacity: '1%'}}/>
+          <div className='col-11 text-end mt-3'>
             <button onClick={() => setModal('')} style={{ background: 'none', border: 'none' }}>
               <i className='bi bi-x text-black fs-1'></i>
             </button>
@@ -85,19 +84,21 @@ export default function HeaderApp() {
           </a>
         </div>
 
-        <div className='col-12 text-end'>
+
+        <div className='col-12 text-end pe-3'>
           <button onClick={() => showModal()} style={{ background: 'none', border: 'none' }}>
             <i className='bi bi-list text-black fs-1'></i>
           </button>
         </div>
 
+        <hr className='mt-4 mb-4' style={{ opacity: '1%'}}/>
         { modal }
       </div>
     )
   }
 
   return (
-    <header className='container-fluid mb-5 bg-white'>
+    <header className='bg-white'>
       { width > 768 ? desktop() : hamburguer() }
     </header>
   )
