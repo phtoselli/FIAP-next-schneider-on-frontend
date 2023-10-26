@@ -1,0 +1,27 @@
+[
+  {
+    "id": "energias-renovaveis",
+    "title": "Energias Renováveis",
+    "description": "Aprenda sobre fontes de energia limpa como solar, eólica e hidrelétrica para um futuro mais verde."
+  },
+  {
+    "id": "conservacao-da-biodiversidade",
+    "title": "Conservação da Biodiversidade",
+    "description": "Saiba como proteger a fauna e a flora, preservando ecossistemas preciosos em todo o mundo."
+  },
+  {
+    "id": "mobilidade-sustentavel",
+    "title": "Mobilidade Sustentável",
+    "description": "Estude alternativas de transporte ecoamigáveis, como veículos elétricos e transporte público eficiente."
+  },
+  {
+    "id": "educacao-ambiental",
+    "title": "Educação Ambiental",
+    "description": "Descubra como educar e inspirar outros a se tornarem defensores do meio ambiente."
+  },
+  {
+    "id": "mudancas-climaticas",
+    "title": "Mudanças Climáticas",
+    "description": "Compreenda as causas e consequências das mudanças climáticas, bem como estratégias de mitigação."
+  }
+]
