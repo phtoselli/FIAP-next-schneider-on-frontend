@@ -3,13 +3,43 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import Footer from '@/components/Footer';
 import Header from '@/components/HeaderApp';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Settings() {
 
-  const [name, setName] = useState('Nome');
-  const [lastName, setLastName] = useState('Sobrenome');
-  const [email, setEmail] = useState('email@email.com');
+  const [cep, setCep] = useState('');
+  const [name, setName] = useState('');
+  const [user, setUser] = useState('');
+  const [city, setCity] = useState('');
+  const [email, setEmail] = useState('');
+  const [state, setState] = useState('');
+  const [lastName, setLastName] = useState('');
+
+  async function searchState() {
+    try {
+      const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome', {
+        method: 'GET'
+      });
+
+      const data = await response.json();
+      const states = data.map((st) => st.nome);
+
+      setState(states);
+      return state;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  function createStatesOption(data) {
+    const result = data.map((curr, key) => <option key={key} value={curr}>{curr}</option>)
+
+    return result;
+  }
+
+  useEffect(() => {
+    searchState();
+  }, []);
 
   return (
     <main>
@@ -20,77 +50,75 @@ export default function Settings() {
           <h2>Configurações pessoais</h2>
           <hr className='mt-3 mb-3' style={{ opacity: '0%' }} />
 
-          <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4">
-              <label for="validationCustom01" class="form-label">Primeiro nome</label>
-              <input type="text" class="form-control" id="validationCustom01" value={name} onChange={(e) => setName(e.target.value)} required/>
-              <div class="valid-feedback">
+          <form className="row g-3 needs-validation" noValidate>
+            <div className="col-md-4">
+              <label htmlFor="validationCustom01" className="form-label">Primeiro nome</label>
+              <input type="text" className="form-control" id="validationCustom01" value={name} onChange={(e) => setName(e.target.value)} required autoComplete='off' />
+              <div className="valid-feedback">
                 Legal!
               </div>
             </div>
-            <div class="col-md-4">
-              <label for="validationCustom02" class="form-label">Último nome</label>
-              <input type="text" class="form-control" id="validationCustom02" value={lastName} onChange={(e) => setLastName(e.target.value)} required/>
-              <div class="valid-feedback">
+            <div className="col-md-4">
+              <label htmlFor="validationCustom02" className="form-label">Último nome</label>
+              <input type="text" className="form-control" id="validationCustom02" value={lastName} onChange={(e) => setLastName(e.target.value)} required autoComplete='off'/>
+              <div className="valid-feedback">
                 Legal!
               </div>
             </div>
-            <div class="col-md-4">
-              <label for="validationCustomUsername" class="form-label">Usuário</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required/>
-                <div class="invalid-feedback">
+            <div className="col-md-4">
+              <label htmlFor="validationCustomUsername" className="form-label">Usuário</label>
+              <div className="input-group has-validation">
+                <span className="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" className="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required value={user} onChange={(e) => setUser(e.target.value)} autoComplete='off'/>
+                <div className="invalid-feedback">
                   Por favor escolha um nome de usuário.
                 </div>
               </div>
             </div>
-            <div class="col-12">
-              <label for="validationCustomEmail" class="form-label">E-mail</label>
-              <input type="text" class="form-control" id="validationCustomEmail" value={email} onChange={(e) => setEmail(e.target.value)} required/>
-              <div class="valid-feedback">
+            <div className="col-12">
+              <label htmlFor="validationCustomEmail" className="form-label">E-mail</label>
+              <input type="text" className="form-control" id="validationCustomEmail" value={email} onChange={(e) => setEmail(e.target.value)} required autoComplete='off'/>
+              <div className="valid-feedback">
                 Legal!
               </div>
             </div>
-            <div class="col-md-6">
-              <label for="validationCustom03" class="form-label">Cidade</label>
-              <input type="text" class="form-control" id="validationCustom03" required/>
-              <div class="invalid-feedback">
-                Preencha o campo com o nome da cidade.
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationCustom04" class="form-label">Estado</label>
-              <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">...</option>
-                <option>...</option>
-                <option>...</option>
-                <option>...</option>
-              </select>
-              <div class="invalid-feedback">
-                Preencha um estado válido.
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationCustom05" class="form-label">CEP</label>
-              <input type="text" class="form-control" id="validationCustom05" required/>
-              <div class="invalid-feedback">
+            <div className="col-md-3">
+              <label htmlFor="validationCustom05" className="form-label">CEP</label>
+              <input type="text" className="form-control" id="validationCustom05" value={cep} onChange={(e) => setCep(e.target.value)} required autoComplete='off'/>
+              <div className="invalid-feedback">
                 Preencha seu CEP.
               </div>
             </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required/>
-                <label class="form-check-label" for="invalidCheck">
+            <div className="col-md-6">
+              <label htmlFor="validationCustom03" className="form-label">Cidade</label>
+              <input type="text" className="form-control" id="validationCustom03" value={city} onChange={(e) => setCity(e.target.value)} required autoComplete='off'/>
+              <div className="invalid-feedback">
+                Preencha o campo com o nome da cidade.
+              </div>
+            </div>
+            <div className="col-md-3">
+              <label htmlFor="validationCustom04" className="form-label">Estado</label>
+              <select className="form-select" id="validationCustom04" required defaultValue={''}>
+                <option disabled value="">Selecione o estado</option>
+                { state.length > 1 ? createStatesOption(state) : '' }
+              </select>
+              <div className="invalid-feedback">
+                Preencha um estado válido.
+              </div>
+            </div>
+            <div className="col-12">
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" value="" id="invalidCheck" required/>
+                <label className="form-check-label" htmlFor="invalidCheck">
                   Aceitar os <a className='link-success' href='/terms'>Termos e condições</a>
                 </label>
-                <div class="invalid-feedback">
+                <div className="invalid-feedback">
                   Você precisa aceitar os termos e condições para continuar.
                 </div>
               </div>
             </div>
-            <div class="col-12">
-              <button class="btn btn-success">Salvar configurações</button>
+            <div className="col-12">
+              <button className="btn btn-success">Salvar configurações</button>
             </div>
           </form>
         </div>
@@ -106,59 +134,59 @@ export default function Settings() {
 
           <form>
 
-            <fieldset class="row mb-3">
-              <legend class="col-form-label col-sm-2 pt-0">Exibir e-mail</legend>
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"/>
-                  <label class="form-check-label" for="gridRadios1">
+            <fieldset className="row mb-3">
+              <legend className="col-form-label col-sm-2 pt-0">Exibir e-mail</legend>
+              <div className="col-sm-10">
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"/>
+                  <label className="form-check-label" htmlFor="gridRadios1">
                     Sim
                   </label>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"/>
-                  <label class="form-check-label" for="gridRadios2">
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"/>
+                  <label className="form-check-label" htmlFor="gridRadios2">
                     Não
                   </label>
                 </div>
-                <div class="form-check disabled">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"/>
-                  <label class="form-check-label" for="gridRadios3">
+                <div className="form-check disabled">
+                  <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"/>
+                  <label className="form-check-label" htmlFor="gridRadios3">
                     Somente para meus contatos
                   </label>
                 </div>
               </div>
             </fieldset>
 
-            <fieldset class="row mb-3">
-              <legend class="col-form-label col-sm-2 pt-0">Notificações</legend>
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"/>
-                  <label class="form-check-label" for="gridRadios1">
+            <fieldset className="row mb-3">
+              <legend className="col-form-label col-sm-2 pt-0">Notificações</legend>
+              <div className="col-sm-10">
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option1"/>
+                  <label className="form-check-label" htmlFor="gridRadios4">
                     Ativadas
                   </label>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"/>
-                  <label class="form-check-label" for="gridRadios2">
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option2"/>
+                  <label className="form-check-label" htmlFor="gridRadios5">
                     Desativadas
                   </label>
                 </div>
-                <div class="form-check disabled">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"/>
-                  <label class="form-check-label" for="gridRadios3">
+                <div className="form-check disabled">
+                  <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value="option3"/>
+                  <label className="form-check-label" htmlFor="gridRadios6">
                     Somente notificações de segurança
                   </label>
                 </div>
               </div>
             </fieldset>
 
-            <div class="row mb-3">
-              <div class="col-sm-10 offset-sm-2">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck1"/>
-                  <label class="form-check-label" for="gridCheck1">
+            <div className="row mb-3">
+              <div className="col-sm-10 offset-sm-2">
+                <div className="form-check">
+                  <input className="form-check-input" type="checkbox" id="gridCheck1"/>
+                  <label className="form-check-label" htmlFor="gridCheck1">
                     Compartilhar estatísticas
                   </label>
                 </div>
@@ -167,16 +195,16 @@ export default function Settings() {
 
             <div className='row'>
               <div className="col-6">
-                <select class="form-select form-select" aria-label="theme">
-                  <option selected>Selecione o tema do aplicativo</option>
+                <select className="form-select form-select" aria-label="theme" id='theme' defaultValue={''}>
+                  <option value=''>Selecione o tema do aplicativo</option>
                   <option value="1">Modo claro</option>
                   <option value="2">Modo escuro</option>
                 </select>
               </div>
             </div>
 
-            <div class="col-12 mt-4">
-              <button class="btn btn-success">Salvar configurações</button>
+            <div className="col-12 mt-4">
+              <button className="btn btn-success">Salvar configurações</button>
             </div>
 
           </form>
