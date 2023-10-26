@@ -32,14 +32,14 @@ export default function Learn() {
     return param.map((obj, key) => {
       return (
         <div className="col p-4" key={key}>
-            <div className="card p-4">
-              <h4 className="card-title">{obj.title}</h4>
-              <p className="text-secondary" style={{ minWidth: '150px' }}>
-                {obj.description}
-              </p>
-              <a className='btn btn-success' href={`/learn/${obj.id}`}>Acessar</a>
-            </div>
+          <div className="card p-4">
+            <h4 className="card-title">{obj.title}</h4>
+            <p className="text-secondary" style={{ minWidth: '150px' }}>
+              {obj.description}
+            </p>
+            <a className='btn btn-success' href={`/learn/${obj.id}`}>Acessar</a>
           </div>
+        </div>
       )
     });
   }
