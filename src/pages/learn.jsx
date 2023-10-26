@@ -32,7 +32,7 @@ export default function Learn() {
     return param.map((obj, key) => {
       return (
         <div className="col p-4" key={key}>
-          <div className="card p-4">
+          <div className="card p-4" >
             <h4 className="card-title">{obj.title}</h4>
             <p className="text-secondary" style={{ minWidth: '150px' }}>
               {obj.description}
@@ -42,6 +42,20 @@ export default function Learn() {
         </div>
       )
     });
+  }
+
+  function messageGenerate() {
+    return (
+      <div>
+        <hr className='mt-5 mb-5' style={{ opacity: '0%' }} />
+        <div className='container'>
+          <div className='container d-flex flex-column align-items-center justify-items-center'>
+            <p className='text-secondary text-center' style={{ maxWidth: '400px' }}>Mais conteúdo <span className='fw-bold'>em breve</span>!</p>
+          </div>
+        </div>
+        <hr className='mt-5 mb-5' style={{ opacity: '0%' }} />
+      </div>
+    )
   }
 
   return (
@@ -56,7 +70,10 @@ export default function Learn() {
 
         </div>
 
+        { data ? messageGenerate(data) : '' }
+
       </section>
+
       <Footer />
     </main>
   )
