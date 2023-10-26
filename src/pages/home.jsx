@@ -10,10 +10,11 @@ export default function Home() {
 
   const [feed, setFeed] = useState([]);
   const [pubsArray, setPubsArray] = useState([]);
+  const [user, setUser] = useState('@example_user');
 
   function addPub () {
     const fake = {
-      user: 'Nome Sobrenome',
+      user,
       content: document.querySelector('#pubText').value
     }
 
@@ -35,10 +36,9 @@ export default function Home() {
   )
 
   useEffect(() => {
-    console.log(pubsArray);
     const feedArray = feed.map((item) => {
       return <div className="container rounded-2 p-4 mt-4 mb-4" style={{ backgroundColor: '#fafafa'}}>
-        <h4>{item.user}</h4>
+        <h6>{item.user}</h6>
         <p className='container bg-white rounded-2 text-secondary pt-2 pb-2'>{item.content}</p>
       </div>
     });
