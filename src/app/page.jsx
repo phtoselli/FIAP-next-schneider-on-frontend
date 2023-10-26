@@ -52,8 +52,7 @@ export default function App() {
             <div className='col-12 d-flex align-items-center flex-column'>
               <iframe
                 className='rounded-4'
-                width={500}
-                height={350}
+                style={{ width: "90%", height: "40vh"}}
                 src="https://www.youtube.com/embed/xTo2gSe3VRU?si=8ZP5uMkVuWg70Ysy"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
