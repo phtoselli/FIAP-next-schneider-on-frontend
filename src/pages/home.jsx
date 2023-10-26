@@ -36,8 +36,8 @@ export default function Home() {
   )
 
   useEffect(() => {
-    const feedArray = feed.map((item) => {
-      return <div className="container rounded-2 p-4 mt-4 mb-4" style={{ backgroundColor: '#fafafa'}}>
+    const feedArray = feed.map((item, key) => {
+      return <div className="container rounded-2 p-4 mt-4 mb-4" style={{ backgroundColor: '#fafafa'}} key={key}>
         <h6>{item.user}</h6>
         <p className='container bg-white rounded-2 text-secondary pt-2 pb-2'>{item.content}</p>
       </div>
