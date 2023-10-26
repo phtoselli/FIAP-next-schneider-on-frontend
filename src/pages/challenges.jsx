@@ -26,9 +26,9 @@ export default function Challenges() {
       )
     }
 
-    return param.map((obj) => {
+    return param.map((obj, key) => {
       return (
-        <div className="col-12 col-lg-4 p-4">
+        <div className="col-12 col-lg-4 p-4" key={key}>
           <div className="card p-4">
             <h4 className="card-title">{obj.title}</h4>
             <p className="text-secondary card-text" style={{ minWidth: '150px'}}>{obj.description}</p>
