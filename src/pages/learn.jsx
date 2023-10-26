@@ -31,7 +31,7 @@ export default function Learn() {
 
     return param.map((obj, key) => {
       return (
-        <div className="col p-4" key={key}>
+        <div className="col-12 col-md-6 col-lg-4 p-4" key={key}>
           <div className="card p-4" >
             <h4 className="card-title">{obj.title}</h4>
             <p className="text-secondary" style={{ minWidth: '150px' }}>
