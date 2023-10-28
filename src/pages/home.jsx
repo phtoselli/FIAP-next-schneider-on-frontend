@@ -137,7 +137,7 @@ export default function Home() {
                 <div className='row'>
                   <div className='col-lg-4'>
                     <div style={{ width: '100%', height: '100%'}}>
-                      <Image src={img}  style={{ maxWidth: '100%', height: 'auto' , objectFit: 'cover', backgroundSize: 'cover', borderRadius: '16px 0px' }} />
+                      <Image src={img}  style={{ maxWidth: '100%', height: 'auto' , objectFit: 'cover', backgroundSize: 'cover', borderRadius: '16px 0px' }} alt='workplace' />
                     </div>
                   </div>
 
