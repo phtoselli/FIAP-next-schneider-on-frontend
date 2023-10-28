@@ -143,6 +143,7 @@ export default function Home() {
 
                   <div className='col-lg-8'>
                     <div className='card-body'>
+                      <h6 className='card-title'>Faça parte dessa comunidade sustentável</h6>
                       <p className='card-text bg-white rounded-2 text-secondary pt-2 pb-2'>
                         Queremos ouvir suas ideias brilhantes sobre sustentabilidade! Compartilhe suas dicas, histórias e iniciativas e inspire seus colegas a adotarem práticas mais ecológicas. Juntos, podemos fazer a diferença e criar um ambiente de trabalho mais sustentável. Suas palavras podem ser a mudança que precisamos. 💡🌱 <br />
                         <span className='fw-bold'>#SustentabilidadeEmAção</span>
