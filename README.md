@@ -2,6 +2,8 @@
 
 🌱 ON is a gamified platform in partnership with Schneider Electric.
 
+🥇 First place winner - FIAP NEXT Challenge 2023 🥇
+
 ## References
 - Bootstrap 5 - [documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - Bootstrap icons - [documentation](https://icons.getbootstrap.com/)
