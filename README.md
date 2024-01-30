@@ -1,8 +1,16 @@
 # Schneider ON
 
-🌱 ON is a gamified platform in partnership with Schneider Electric.
+🌱 The Schneider ON is an initiative tailored for the company's employees, aiming to guide and teach them how to incorporate sustainable lifestyle habits into their daily lives. Committed to promoting environmental and social responsibility, the platform offers educational resources, practical tips, and interactive challenges, creating an engaging environment to encourage more sustainable practices.
+
+**Educational Content:** Informative materials on sustainable practices and their positive impact.
+**Interactive Challenges:** Encourages participation through monthly challenges, fostering the gradual adoption of sustainable habits.
+**Practical Tips:** Simple guidelines for integrating sustainable practices into daily life.
+**Engaged Community:** Forums and discussion groups to share experiences, tips, and achievements related to sustainability.
 
 🥇 First place winner - FIAP NEXT Challenge 2023 🥇
+
+## Visit the project
+🧑‍💻 You can visit the project [here](https://schneider-on.vercel.app/) 
 
 ## References
 - Bootstrap 5 - [documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
@@ -11,11 +19,6 @@
 - CSS - [documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - Next.JS - [documentation](https://nextjs.org/docs)
 - Vercel - [documentation](https://vercel.com/docs)
-
-
-## Visit the project
-You can visit the project [here](https://schneider-on.vercel.app/)
-
 
 ## Running locally
   Obs: You need to have "git" installed on your machine.
